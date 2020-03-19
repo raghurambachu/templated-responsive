@@ -108,7 +108,7 @@ h4{
 	background: #7F7E93;
 	position: fixed;
 	width: 100%;
-	z-index: 1;
+	z-index: 2;
 }
 
 .header a,
@@ -284,6 +284,29 @@ h4{
 	flex-wrap: wrap;
 }
 
+.relative{
+	position: relative;
+}
+
+.line{
+	width: 2px;
+	height: 50px;
+	border-right: 1.5px solid rgb(121, 117, 117);
+	position: absolute;
+	top: -50px;
+	z-index: 1;
+}
+
+.top-line{
+	height: 2px;
+	width: 66%;
+	border-bottom: 1.5px solid rgb(121, 117, 117);
+	position: absolute;
+	z-index: 1;
+	left: 16.5%;
+	top: 100px;
+}
+
 .icon-rect{
 	height: 90px;
 	width: 90px;
@@ -347,6 +370,16 @@ h4{
 		max-width: 400px;
 		margin: 0 auto;
 	}
+
+	.top-line{
+		height: 2px;
+		width: 66%;
+		border-bottom: 1.5px solid black;
+		position: absolute;
+		z-index: 1;
+		left: 16.5%;
+		top: 98px;
+	}
 }
 
 @media all and (max-width:900px){
@@ -398,6 +431,16 @@ h4{
 		width: 600px;
 	}
 
+	.top-line{
+		height: 2px;
+		width: 66%;
+		border-bottom: 1.5px solid black;
+		position: absolute;
+		z-index: 1;
+		left: 16.5%;
+		top: 119px;
+	}
+
 }
 
 
@@ -426,6 +469,12 @@ h4{
 	.secondary-right h2 {
 		width: 500px;
 	}
+
+	.top-line,
+	.line{
+		display: none;
+	}
+
 
 }
 
