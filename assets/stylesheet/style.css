@@ -111,6 +111,10 @@ h4{
 	z-index: 2;
 }
 
+.logo{
+	z-index: 2;
+}
+
 .header a,
 .header h3{
 	color: whitesmoke;
@@ -122,9 +126,51 @@ h4{
 	align-items: center;
 }
 
-.nav li{
+.nav .nav-menu > li{
 	margin-left: 32px;
 }
+
+.bars,
+.toggle,
+.sub-menu-box{
+	display: none;
+}
+
+.nav-menu-item{
+	position: relative;
+}
+
+.sub-menu-box{
+	position: absolute;	
+	padding-top: 40px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.sub-menu{
+	background: #7F7E93;
+	text-align: center;
+}
+
+.sub-menu a{
+	display: block;
+	padding: 10px 30px;
+	white-space: nowrap;
+	
+}
+
+.sub-menu li{
+	border-bottom: 0.4px solid rgb(163, 163, 163);
+}
+
+.sub-menu li:last-child{
+	border-bottom: 0;
+}
+
+.nav-menu-item:hover .sub-menu-box{
+	display: inline-block;
+}
+
 
 /* Hero Section */
 .hero-section{
@@ -451,6 +497,8 @@ h4{
 		margin: 0 auto;
 	}
 
+
+
 	.primary-section-left{
 		width: 500px;
 	}
@@ -486,9 +534,33 @@ h4{
 		margin: 0 auto;
 	}
 
+
+
+
+	.bars{
+		display: inline-block;
+		position: relative;
+		z-index: 2;
+		color: #ffffff;
+	}
+
+	.toggle:checked ~ .nav-menu{
+		display: inline-block;
+	}
+
 	.nav-menu{
 		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom:0;
+		background: #7F7E93;
+		text-align: center;
+		padding-top: 80px;
 	}
+
+	
 
 
 	.primary-section-left,
